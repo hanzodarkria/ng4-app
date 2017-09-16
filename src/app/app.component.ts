@@ -7,18 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   username = '';
-  isTextboxEmpty = true;
-
-  clearTextbox(){
+  
+  clearTextbox() {
     this.username = '';
   }
-
-  checkTextbox(){
-    if(this.username){
-      this.isTextboxEmpty = false;
-      return;
-    }
-    this.isTextboxEmpty = true;
-  }
-
+ 
 }
