@@ -9,4 +9,5 @@
   {{username}}
 </p>
 <!-- <button class="btn btn-primary" [disabled]="this.username.length === 0" (click)="clearTextbox()">Clear</button> -->
-<button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Clear</button>
+<!-- <button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Clear</button> -->
+<button class="btn btn-primary" [disabled]="!username" (click)="username = ''">Clear</button>
