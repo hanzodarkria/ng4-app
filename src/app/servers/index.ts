@@ -27,6 +27,7 @@ export class ServersComponent implements OnInit  {
 
   onUpdateServerName(event: Event) {
     console.log('event : ', event);
+    console.log('get me the value : ', <HTMLInputElement>event.target);
     // We know the on the event that the value is in event.target.value
     // typescript lint will trigger because 'target' is of type input element though
     // We explicate inform the type in typescript by adding <HTMLInputElement> in front of it
